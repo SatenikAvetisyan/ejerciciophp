@@ -50,7 +50,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body>
     <h2>Registro</h2>
-    <form action="register.php" method="POST">
+    <form action="index.php" method="POST">
         <label>Nombre
             <input type="text" name="name" value="<?php echo htmlspecialchars($name ?? ''); ?>" required>
             <span class="error"><?php echo $errors['name'] ?? ''; ?></span>
